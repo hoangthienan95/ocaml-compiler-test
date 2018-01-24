@@ -1,0 +1,17 @@
+opam-version: "1.3"
+name: "Compiler Test"
+version: "0.1"
+maintainer: "Peter-Michael Osera <psosera@gmail.com>"
+author: "Peter-Michael Osera <psosera@gmail.com>"
+homepage: "https://github.com/psosera/ocaml-compiler-test"
+bug-reports: "https://github.com/psosera/ocaml-compiler-test/issues"
+dev-repo: "https://github.com/psosera/ocaml-compiler-test.git"
+build: [
+  [make]
+]
+depends: [
+  "ocamlfind" {build}
+  "menhir"    {build}
+]
+
+available: [ ocaml-version > "4.01" ]
